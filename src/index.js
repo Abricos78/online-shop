@@ -7,12 +7,12 @@ import './main.css'
 // My import
 import {store} from './store'
 import {history} from './store'
-import Layout from 'containers/Phones/Phones'
+import {routes} from 'routes'
 
 ReactDom.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <Layout />
+            {routes}
         </ConnectedRouter>
     </Provider>,
     document.getElementById('root')
